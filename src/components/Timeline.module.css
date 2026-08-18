@@ -1,0 +1,171 @@
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--accent-primary), var(--accent-primary), transparent);
+  transform: translateX(-50%);
+}
+
+.item {
+  position: relative;
+  width: 50%;
+  padding: 0 40px 50px;
+  opacity: 0;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item.left {
+  left: 0;
+  text-align: right;
+  transform: translateX(-30px);
+}
+
+.item.right {
+  left: 50%;
+  text-align: left;
+  transform: translateX(30px);
+}
+
+.item.itemVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dot {
+  position: absolute;
+  top: 6px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  z-index: 2;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.left .dot {
+  right: -22px;
+}
+
+.right .dot {
+  left: -22px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: all var(--transition-medium);
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  background: rgba(212, 168, 83, 0.12);
+  color: var(--accent-primary);
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+}
+
+.year {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.role {
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.skillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skillTag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: 50px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .line {
+    left: 22px;
+  }
+
+  .item {
+    width: 100%;
+    padding: 0 0 40px 60px;
+  }
+
+  .item.left,
+  .item.right {
+    left: 0;
+    text-align: left;
+    transform: translateX(-20px);
+  }
+
+  .item.itemVisible {
+    transform: translateX(0);
+  }
+
+  .left .dot,
+  .right .dot {
+    left: 0;
+    right: auto;
+  }
+}
