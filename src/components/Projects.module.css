@@ -142,7 +142,7 @@
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Expandable */
+/* Expandable Details */
 .expandable {
   max-height: 0;
   overflow: hidden;
@@ -150,12 +150,49 @@
 }
 
 .expandable.expanded {
-  max-height: 400px;
+  max-height: 800px;
+}
+
+/* Architecture Box */
+.architectureBox {
+  margin-top: 14px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  background: rgba(13, 27, 42, 0.6);
+  border: 1px dashed rgba(212, 168, 83, 0.35);
+  border-radius: var(--radius-sm);
+}
+
+.architectureHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.architectureIcon {
+  font-size: 0.9rem;
+}
+
+.architectureTitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-primary);
+}
+
+.architectureText {
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: #c0d1e5;
+  line-height: 1.6;
 }
 
 .highlights {
-  padding-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--border-subtle);
+  margin-bottom: 14px;
 }
 
 .highlightsTitle {
@@ -189,21 +226,53 @@
   margin-top: 7px;
 }
 
+/* Card Actions */
 .cardActions {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btnGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.demoLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ff6b6b;
+  padding: 6px 14px;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: 50px;
+  transition: all var(--transition-fast);
+}
+
+.demoLink:hover {
+  background: rgba(255, 107, 107, 0.2);
+  border-color: #ff6b6b;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(255, 107, 107, 0.3);
 }
 
 .githubLink {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-secondary);
-  padding: 6px 16px;
+  padding: 6px 14px;
   border: 1px solid var(--border-subtle);
   border-radius: 50px;
   transition: all var(--transition-fast);
@@ -252,5 +321,10 @@
 
   .cardTitle {
     font-size: 1.15rem;
+  }
+
+  .cardActions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

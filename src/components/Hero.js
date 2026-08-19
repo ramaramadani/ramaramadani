@@ -4,10 +4,10 @@ import { Lottie } from "lottie-react";
 import styles from "./Hero.module.css";
 
 const roles = [
+  "IoT Systems Engineer",
   "Full-Stack Developer",
-  "IoT Engineer",
-  "Project Leader",
-  "Software Engineer",
+  "Hardware-to-Cloud Architect",
+  "4× Project Leader",
 ];
 
 export default function Hero() {
@@ -217,9 +217,9 @@ export default function Hero() {
         </div>
 
         <p className={styles.subtitle}>
-          Informatics Engineering student specializing in full-stack web development
-          and embedded IoT systems. 4× Project Leader with a passion for building
-          reliable, impactful digital solutions.
+          Informatics Engineering student specializing in full-stack web engineering
+          and embedded IoT systems. 4× Project Leader with GPA 3.90, dedicated to building
+          high-reliability hardware-to-cloud digital solutions.
         </p>
 
         <div className={styles.cta}>
