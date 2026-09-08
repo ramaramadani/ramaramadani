@@ -15,9 +15,9 @@ export default function About() {
             <p className={styles.bio}>
               I&apos;m Rama Ramadani, an Informatics Engineering student at
               <strong> Politeknik Negeri Batam</strong> with a strong academic record
-              (GPA 3.90/4.00, Cum Laude). I specialize in full-stack web development
+              (GPA 3.80/4.00, Cum Laude). I specialize in full-stack web development
               using Laravel, Django, and Next.js, as well as embedded IoT systems
-              with Arduino and ESP32.
+              using Arduino and ESP32.
             </p>
             <p className={styles.bio}>
               Over 4 consecutive semesters, I&apos;ve been appointed as Project Leader,
@@ -63,13 +63,13 @@ export default function About() {
                 <div className={styles.codeLine}>
                   <span className={styles.codeKey}>&quot;gpa&quot;</span>
                   <span className={styles.codePunc}>: </span>
-                  <span className={styles.codeNum}>3.90</span>
+                  <span className={styles.codeNum}>3.80</span>
                   <span className={styles.codePunc}>,</span>
                 </div>
                 <div className={styles.codeLine}>
                   <span className={styles.codeKey}>&quot;semester&quot;</span>
                   <span className={styles.codePunc}>: </span>
-                  <span className={styles.codeNum}>4</span>
+                  <span className={styles.codeNum}>5</span>
                   <span className={styles.codePunc}>,</span>
                 </div>
                 <div className={styles.codeLine}>
@@ -89,7 +89,7 @@ export default function About() {
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
                 <span className={styles.statIcon}>🎓</span>
-                <span className={styles.statValue}>3.90</span>
+                <span className={styles.statValue}>3.80</span>
                 <span className={styles.statLabel}>GPA Score</span>
               </div>
               <div className={styles.statCard}>

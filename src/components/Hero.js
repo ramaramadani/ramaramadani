@@ -218,7 +218,7 @@ export default function Hero() {
 
         <p className={styles.subtitle}>
           Informatics Engineering student specializing in full-stack web engineering
-          and embedded IoT systems. 4× Project Leader with GPA 3.90, dedicated to building
+          and embedded IoT systems. 4× Project Leader with GPA 3.80, dedicated to building
           high-reliability hardware-to-cloud digital solutions.
         </p>
 
@@ -236,7 +236,7 @@ export default function Hero() {
 
         <div className={styles.stats}>
           <div className={styles.stat}>
-            <span className={styles.statNum}>3.90</span>
+            <span className={styles.statNum}>3.80</span>
             <span className={styles.statLabel}>GPA</span>
           </div>
           <div className={styles.statDivider} />

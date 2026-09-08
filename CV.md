@@ -10,13 +10,13 @@ Batam, Indonesia | +62-823-8951-9698 | ramaramadanipbl@gmail.com[cite: 1]
 ---
 
 ## SUMMARY
-Informatics Engineering student at Politeknik Negeri Batam with GPA 3.90/4.00 (Cum Laude, Semesters 1-3)[cite: 1]. Proficient in full-stack web development (Laravel, Django, Next.js) and embedded IoT systems (Arduino, ESP32), with hands-on experience in REST API development, database design (MySQL), and hardware-software integration[cite: 1]. Appointed Project Leader for 4 consecutive semesters, consistently leading teams through the complete SDLC from requirement analysis, use case modeling, SRS/SKPL authoring, and system design to implementation, functional testing, test case design, bug logging, technical documentation, and production deployment[cite: 1]. Demonstrates meticulous attention to detail, structured analytical thinking, effective bilingual communication, and a strong commitment to delivering reliable, impactful digital solutions[cite: 1].
+Informatics Engineering student at Politeknik Negeri Batam with GPA 3.80/4.00 (Cum Laude, Semesters 1-4)[cite: 1]. Proficient in full-stack web development (Laravel, Django, Next.js) and embedded IoT systems (Arduino, ESP32), with hands-on experience in REST API development, database design (MySQL), and hardware-software integration[cite: 1]. Appointed Project Leader for 4 consecutive semesters, consistently leading teams through the complete SDLC from requirement analysis, use case modeling, SRS/SKPL authoring, and system design to implementation, functional testing, test case design, bug logging, technical documentation, and production deployment[cite: 1]. Demonstrates meticulous attention to detail, structured analytical thinking, effective bilingual communication, and a strong commitment to delivering reliable, impactful digital solutions[cite: 1].
 
 ---
 
 ## EDUCATION
 **Politeknik Negeri Batam** — *D3 Teknik Informatika*[cite: 1]  
-**GPA:** 3.90 / 4.00 (Cum Laude) | **Current Semester:** 4 | Batam, Indonesia (Sept. 2024 – Present)[cite: 1]  
+**GPA:** 3.80 / 4.00 (Cum Laude) | **Current Semester:** 5 | Batam, Indonesia (Sept. 2024 – Present)[cite: 1]  
 * **Coursework:** Web Programming, Database Management, OOP, IoT Systems, Software Engineering, System Analysis & Modeling, Human-Computer Interaction, Agile Project Innovation, Advanced Software Engineering[cite: 1].
 
 ---

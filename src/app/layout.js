@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata = {
   title: "Rama Ramadani — Full-Stack Developer & IoT Engineer",
   description:
-    "Portfolio of Rama Ramadani, Informatics Engineering student at Politeknik Negeri Batam. Specializing in full-stack web development (Laravel, Django, Next.js) and embedded IoT systems (Arduino, ESP32). 4× Project Leader with GPA 3.90.",
+    "Portfolio of Rama Ramadani, Informatics Engineering student at Politeknik Negeri Batam. Specializing in full-stack web development (Laravel, Django, Next.js) and embedded IoT systems (Arduino, ESP32). 4× Project Leader with GPA 3.80.",
   keywords: [
     "Rama Ramadani",
     "Full-Stack Developer",
