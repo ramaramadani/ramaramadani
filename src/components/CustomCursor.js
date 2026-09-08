@@ -31,14 +31,43 @@ export default function CustomCursor() {
       const ring = ringRef.current;
       if (!dot || !ring) return;
 
+      let isLoopRunning = false;
+
+      const animateRing = () => {
+        const dx = mousePos.current.x - ringPos.current.x;
+        const dy = mousePos.current.y - ringPos.current.y;
+        ringPos.current.x += dx * 0.18;
+        ringPos.current.y += dy * 0.18;
+        ring.style.transform = `translate(${ringPos.current.x - 20}px, ${ringPos.current.y - 20}px)`;
+
+        if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
+          animationRef.current = requestAnimationFrame(animateRing);
+        } else {
+          isLoopRunning = false;
+        }
+      };
+
+      const startRingLoop = () => {
+        if (!isLoopRunning) {
+          isLoopRunning = true;
+          animationRef.current = requestAnimationFrame(animateRing);
+        }
+      };
+
       const handleMouseMove = (e) => {
         mousePos.current.x = e.clientX;
         mousePos.current.y = e.clientY;
         setIsVisible(true);
         dot.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
+        startRingLoop();
       };
 
-      const handleMouseLeave = () => setIsVisible(false);
+      const handleMouseLeave = () => {
+        setIsVisible(false);
+        if (animationRef.current) cancelAnimationFrame(animationRef.current);
+        isLoopRunning = false;
+      };
+
       const handleMouseEnter = () => setIsVisible(true);
 
       const handleMouseOver = (e) => {
@@ -55,19 +84,12 @@ export default function CustomCursor() {
 
       const handleMouseOut = () => setIsHovering(false);
 
-      const animateRing = () => {
-        ringPos.current.x += (mousePos.current.x - ringPos.current.x) * 0.15;
-        ringPos.current.y += (mousePos.current.y - ringPos.current.y) * 0.15;
-        ring.style.transform = `translate(${ringPos.current.x - 20}px, ${ringPos.current.y - 20}px)`;
-        animationRef.current = requestAnimationFrame(animateRing);
-      };
-
-      document.addEventListener("mousemove", handleMouseMove);
-      document.addEventListener("mouseleave", handleMouseLeave);
-      document.addEventListener("mouseenter", handleMouseEnter);
-      document.addEventListener("mouseover", handleMouseOver);
-      document.addEventListener("mouseout", handleMouseOut);
-      animationRef.current = requestAnimationFrame(animateRing);
+      document.addEventListener("mousemove", handleMouseMove, { passive: true });
+      document.addEventListener("mouseleave", handleMouseLeave, { passive: true });
+      document.addEventListener("mouseenter", handleMouseEnter, { passive: true });
+      document.addEventListener("mouseover", handleMouseOver, { passive: true });
+      document.addEventListener("mouseout", handleMouseOut, { passive: true });
+      startRingLoop();
 
       // Store cleanup refs
       dotRef.current._cleanup = () => {
@@ -76,7 +98,7 @@ export default function CustomCursor() {
         document.removeEventListener("mouseenter", handleMouseEnter);
         document.removeEventListener("mouseover", handleMouseOver);
         document.removeEventListener("mouseout", handleMouseOut);
-        cancelAnimationFrame(animationRef.current);
+        if (animationRef.current) cancelAnimationFrame(animationRef.current);
       };
     });
 
