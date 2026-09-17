@@ -49,7 +49,7 @@ export default function Footer() {
             <a href="mailto:ramaramadanipbl@gmail.com" target="_blank" rel="noopener noreferrer">
               Email
             </a>
-            <a href="https://linkedin.com/in/rama-ramadani-865291334" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/rama-ramadani-dev" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
             <a href="https://github.com/ramaramadani" target="_blank" rel="noopener noreferrer">

@@ -235,10 +235,6 @@ export default function Hero() {
         <div className={styles.heroGrid}>
           {/* Left Column: Intro & Info */}
           <div className={styles.heroLeft}>
-            <div className={styles.labelWrap}>
-              <span className={styles.statusDot} />
-              <span className={styles.statusLabel}>Available for opportunities</span>
-            </div>
 
             <h1 className={styles.title}>
               <span className={styles.greeting}>HELLO, I&apos;M</span>

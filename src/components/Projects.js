@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Smart IoT Attendance System",
     subtitle: "RFID & Biometric Verification",
-    semester: "Semester 4 — 2026",
+    semester: "Semester 4, 2026",
     role: "Project Leader",
     tech: ["PHP", "Laravel", "Arduino IDE", "NodeMCU (ESP8266)", "RFID MFRC522", "Fingerprint Sensor", "MySQL", "REST API"],
     description:
@@ -29,7 +29,7 @@ const projects = [
     id: 2,
     title: "Smart Solar-Powered Aquaponic",
     subtitle: "IoT Automation & Energy Harvesting",
-    semester: "Semester 3 — 2025",
+    semester: "Semester 3, 2025",
     role: "Project Leader",
     tech: ["Next.js", "ESP32", "ESP8266", "Arduino IDE", "Solar Panel", "Sensors (pH, Temp)", "WebSocket", "REST API"],
     description:
@@ -50,7 +50,7 @@ const projects = [
     id: 3,
     title: "E-Commerce Platform (Furnipark)",
     subtitle: "Decoupled Microservices Architecture",
-    semester: "Semester 2 — 2025",
+    semester: "Semester 2, 2025",
     role: "Project Leader",
     tech: ["PHP", "Laravel", "Python", "Django REST Framework", "MySQL", "JWT Auth", "Postman"],
     description:
@@ -70,7 +70,7 @@ const projects = [
     id: 4,
     title: "Tourism Destination Guide (Oceara)",
     subtitle: "Full-Stack Destination CMS & Review Engine",
-    semester: "Semester 1 — 2024",
+    semester: "Semester 1, 2024",
     role: "Project Leader",
     tech: ["PHP", "Laravel", "MySQL", "Blade Engine", "Bootstrap", "SDLC Waterfall"],
     description:
@@ -99,7 +99,7 @@ export default function Projects() {
           <span className="sectionLabel" style={{ justifyContent: "center" }}>Portfolio</span>
           <h2 className="sectionTitle">Featured Engineering Projects</h2>
           <p className="sectionSubtitle" style={{ margin: "0 auto" }}>
-            Proven track record of 4× Project Leadership — from system architecture, hardware-software integration, to production deployment.
+            Proven track record of 4x Project Leadership, from system architecture, hardware-software integration, to production deployment.
           </p>
         </div>
 

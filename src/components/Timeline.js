@@ -49,7 +49,7 @@ export default function Timeline() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section id="experience" className="section" style={{ background: "var(--bg-secondary)" }}>
+    <section id="experience" className="section">
       <div className="container" ref={ref}>
         <div className={`reveal ${isVisible ? "visible" : ""}`} style={{ textAlign: "center", marginBottom: 60 }}>
           <span className="sectionLabel" style={{ justifyContent: "center" }}>Experience</span>

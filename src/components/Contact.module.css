@@ -17,16 +17,20 @@
   align-items: center;
   gap: 16px;
   padding: 18px 20px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
+  backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  box-shadow: var(--glass-shadow);
   transition: all var(--transition-medium);
 }
 
 .contactCard:hover {
-  border-color: var(--border-hover);
+  border-color: var(--glass-border-hover);
   transform: translateX(6px);
-  background: var(--bg-card-hover);
+  background: var(--glass-bg-hover);
+  box-shadow: var(--glass-shadow-hover);
 }
 
 .contactIcon {
@@ -35,10 +39,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(212, 168, 83, 0.1);
+  background: rgba(212, 168, 83, 0.12);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
   color: var(--accent-primary);
   flex-shrink: 0;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
 }
 
 .contactText {
@@ -86,18 +92,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
+  backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.12), 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: all var(--transition-fast);
 }
 
 .socialLink:hover {
-  border-color: var(--accent-primary);
+  border-color: var(--glass-border-hover);
   color: var(--accent-primary);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(212, 168, 83, 0.15);
+  background: var(--glass-bg-hover);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25), 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Form */
@@ -105,11 +115,13 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   padding: 32px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+  box-shadow: var(--glass-shadow);
 }
 
 .formGroup {
@@ -130,12 +142,15 @@
 .textarea {
   width: 100%;
   padding: 14px 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   font-family: var(--font-body);
   font-size: 0.95rem;
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
   transition: all var(--transition-fast);
   outline: none;
 }
@@ -148,7 +163,7 @@
 .input:focus,
 .textarea:focus {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px var(--accent-glow);
+  box-shadow: 0 0 0 3px var(--accent-glow), inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .textarea {

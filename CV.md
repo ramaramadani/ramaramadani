@@ -5,7 +5,7 @@
 
 **Full-Stack Developer & IoT Engineer**[cite: 1]  
 Batam, Indonesia | +62-823-8951-9698 | ramaramadanipbl@gmail.com[cite: 1]  
-[LinkedIn](https://linkedin.com/in/rama-ramadani-865291334) | [GitHub](https://github.com/ramaramadani)[cite: 1]
+[LinkedIn](https://www.linkedin.com/in/rama-ramadani-dev) | [GitHub](https://github.com/ramaramadani)[cite: 1]
 
 ---
 

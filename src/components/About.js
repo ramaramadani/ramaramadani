@@ -22,7 +22,7 @@ export default function About() {
             <p className={styles.bio}>
               Over 4 consecutive semesters, I&apos;ve been appointed as Project Leader,
               consistently guiding teams through the complete Software Development
-              Life Cycle — from requirement analysis and system design to implementation,
+              Life Cycle, from requirement analysis and system design to implementation,
               testing, documentation, and production deployment.
             </p>
             <div className={styles.tags}>
